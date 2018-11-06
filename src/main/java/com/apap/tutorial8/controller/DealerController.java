@@ -2,7 +2,6 @@ package com.apap.tutorial8.controller;
 
 import java.util.List;
 
-
 import com.apap.tutorial8.model.CarModel;
 import com.apap.tutorial8.model.DealerModel;
 import com.apap.tutorial8.service.CarService;
@@ -28,10 +27,6 @@ public class DealerController {
     @Autowired
     private CarService carService;
 
-    @RequestMapping("/")
-    private String home() {
-        return "home";
-    }
 
     @RequestMapping(value = "/dealer/add", method = RequestMethod.GET)
     private String add(Model model) {
